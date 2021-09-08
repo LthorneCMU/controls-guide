@@ -14,10 +14,12 @@ runtime-config:
           module: KeyValueStore
           calibration: 'times3({})'
           initial_value: 1.75
+          get_on_set: True
+          log_on_set: True
         - name: waffles
           module: KeyValueStore
-          #log_interval: 30
-          #log_on_set: True
+          log_interval: 30
           calibration: '1.*{}'
           initial_value: 4.00
-
+          get_on_set: True
+          log_on_set: True
